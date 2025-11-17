@@ -1,11 +1,16 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-
+const links = [
+  { link: "#", name: "Home" },
+  { link: "#", name: "Plant type" },
+  { link: "#", name: "More" },
+  { link: "#", name: "Contact" },
+]
 const Navbar = () => {
   return (
     <header className="fixed h-12 w-screen flex px-[39px] py-[57px] z-10">
-      <nav className="flex top-[57px]  left-[39px] h-full w-full items-center justify-between ">
+      <nav className="flex  h-full w-full items-center justify-between ">
         {/* logo */}
 
         <Link href="/" className="flex gap-2">
@@ -23,28 +28,29 @@ const Navbar = () => {
 
         {/* options */}
 
-        <ul className="flex text-[24px] gap-[70px] h-[35px] w-[531px] items-center justify-between text-[#FFFFFF] ">
-          <li>
-            <Link href="">Home</Link>
-          </li>
-          <li>
-            <Link href="" className="flex gap-5">
-              Plant Type
-              <Image
-                src="/assets/arrow-down.png"
-                alt="Polygon Logo"
-                className="object-contain"
-                height={7}
-                width={12}
-              />
-            </Link>
-          </li>
-          <li>
-            <Link href="">More</Link>
-          </li>
-          <li>
-            <Link href="">Contact</Link>
-          </li>
+        <ul className="flex text-[24px] gap-[70px]  items-center  text-[#FFFFFF] ">
+          {links.map((li, i) => {
+            return li.name === "Plant type" ? (
+              <Link key={i} href={li.link}>
+                <li className="flex items-start gap-5">
+                  {li.name}
+                  <Image
+                    src="/assets/arrow-down.png"
+                    alt="image"
+                    height={7}
+                    width={12}
+                    className="mt-3.5"
+                  />
+                </li>
+              </Link>
+            ) : (
+              <Link key={i} href={li.link}>
+                <li>{li.name}</li>
+              </Link>
+            );
+          })}
+
+
         </ul>
 
         {/* right icons */}

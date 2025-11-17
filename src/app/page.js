@@ -1,10 +1,14 @@
 import HeroSection from "@/components/sections/HeroSection";
-import Image from "next/image";
+import TrendyPlants from "@/components/sections/TrendyPlants";
+
 
 export default function Home() {
   return (
-    <main>
+    <main >
+      <section className="bg-[url(/assets/background-photo.jpg)] bg-no-repeat bg-cover bg-top">
       <HeroSection />
+      <TrendyPlants/>
+      </section>
     </main>
   );
 }
