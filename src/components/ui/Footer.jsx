@@ -30,7 +30,7 @@ const Footer = () => {
           <h1 className="text-[28px] font-extrabold text-[#FFFFFF] ">
             Quick Link&apos;s
           </h1>
-          <div className="flex flex-col gap-[26px] mt-[46px] text-[#FFFFFF] text-[24px] font-medium underline">
+          <div className="flex flex-col gap-[26px] pt-[46px] text-[#FFFFFF] text-[24px] font-medium underline">
             <p>Home</p>
             <p>Type&apos;s Of plant&apos;s</p>
             <p>Contact</p>
