@@ -18,7 +18,7 @@ const TrendyPlants = () => {
   return (
     <section>
       <div className="py-[83px] px-[39px]">
-        <h2 className="max-w-max text-white text-[55px] font-semibold mx-auto">
+        <h2 className="max-w-max text-[#FFFFFF] text-[55px] font-semibold mx-auto">
           Our Trendy plants
         </h2>
         <div className="mt-[79px]">

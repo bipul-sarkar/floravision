@@ -1,3 +1,4 @@
+import Footer from "@/components/ui/Footer";
 import "./globals.css";
 import Navbar from "@/components/ui/Navbar";
 import { Inter, Indie_Flower } from "next/font/google";
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
       <body className="antialiased">
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

@@ -4,8 +4,8 @@ import React from "react";
 const HeroUserCard = () => {
   return (
     <>
-      <div className="min-h-[237px] w-[409px] rounded-[45px] bg-[linear-gradient(109.4deg,#FFFFFF_0%,#666666_41.42%)] p-0.5 ">
-        <div className="h-full w-full rounded-[45px]  bg-white/5 pt-[37px] pl-[27px] backdrop-blur-[17px] overflow-hidden">
+      <div className="min-h-[237px] w-[409px] rounded-[45px] bg-[linear-gradient(109.4deg,#FFFFFF_0%,#666666_41.42%)] p-1 ">
+        <div className="h-full w-full rounded-[45px] bg-[#FFFFFF0D] backdrop-blur-[17px] pt-[37px] pl-[27px] ">
           <div className="flex gap-7 items-center justify-start ">
             {/* Image */}
 
