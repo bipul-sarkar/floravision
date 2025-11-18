@@ -6,8 +6,9 @@ import { RxCaretLeft, RxCaretRight } from "react-icons/rx";
 const OurBestO2 = () => {
   return (
     <section className="min-h-screen bg-[#1c2416] px-[39px]">
-      <div className="min-h-[1600px] min-w-[755px] bg-custom-gradient p-[3px] rounded-[92px]">
-        <div className="h-full w-full rounded-[92px] bg-[#FFFFFF0D] grid grid-cols-2 ">
+      <div className=" min-w-[755px] bg-custom-gradient p-[3px] rounded-[92px]">
+        <div className="bg-[#1c2416] h-full w-full rounded-[92px] overflow-hidden">
+        <div className=" bg-white/5 grid grid-cols-2 ">
           <div className="">
             <Image
               src="/assets/BigPlant1.png"
@@ -44,6 +45,7 @@ const OurBestO2 = () => {
               </div>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </section>

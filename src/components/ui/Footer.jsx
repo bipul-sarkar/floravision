@@ -1,6 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
-
+const Links=[
+  {name:"Home",href:"#"},
+  {name:"Type's Of plant's",href:"#"},
+  {name:"Contact",href:"#"},
+  {name:"Privacy",href:"#"},
+]
 const Footer = () => {
   return (
     <footer className="min-h-[755px] bg-[#1c2416] px-[39px] pt-[404px]">
@@ -26,15 +32,14 @@ const Footer = () => {
           </p>
         </div>
         {/* Quick Links  */}
-        <div className="flex flex-col text-center ">
+        <div className="flex flex-col items-center ">
           <h1 className="text-[28px] font-extrabold text-[#FFFFFF] ">
             Quick Link&apos;s
           </h1>
-          <div className="flex flex-col gap-[26px] pt-[46px] text-[#FFFFFF] text-[24px] font-medium underline">
-            <p>Home</p>
-            <p>Type&apos;s Of plant&apos;s</p>
-            <p>Contact</p>
-            <p>Privacy</p>
+          <div className="flex flex-col gap-[26px] pl-2 pt-[46px] text-[#FFFFFF] text-[24px] font-medium underline">
+            {Links.map((link)=>(
+              <Link key={link.name} href={link.href}>{link.name}</Link>
+            ))}
           </div>
         </div>
 
@@ -43,13 +48,13 @@ const Footer = () => {
           <h1 className="text-[28px] font-extrabold text-[#FFFFFF] text-start">
             For Every Update.
           </h1>
-          <div className="flex border-2 border-[#FFFFFF] gap-1 p-0.5 mt-[50px] h-[74px] w-[562px] rounded-lg">
+          <div className="flex border-2  border-[#FFFFFF] gap-1 p-0.5 mt-[50px] h-[74px]  rounded-lg">
             <input
               type="email"
               placeholder="Enter Email"
-              className="h-full w-full text-[#FFFFFF] text-[24px] py-[22px] pl-[29px] border-transparent outline-none opacity-75 font-medium"
+              className="h-full w-full pl-[29px] text-[#FFFFFF] text-[24px] py-[22px]  border-transparent outline-none opacity-75 font-medium"
             />
-            <button className="h-[64.89px] w-[165.08px] p-5 bg-[#FFFFFF] text-[22px] text-center rounded-lg text-[#000000] uppercase font-bold">
+            <button className=" p-5 bg-[#FFFFFF] text-[22px] text-center rounded-lg text-[#000000] uppercase font-bold">
               SUBSCRIBE
             </button>
           </div>
