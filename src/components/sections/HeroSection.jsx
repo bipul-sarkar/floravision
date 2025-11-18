@@ -8,7 +8,7 @@ const HeroSection = () => {
   return (
     <section>
       <div className="pt-46">
-        <div className="grid grid-cols-2 pl-[39px]">
+        <div className="grid grid-cols-2 px-[39px]">
           <div className="flex flex-col justify-between h-[700px]">
             <div>
               <p className=" w-[798px] h-[143px] text-[118px] opacity-75 font-semibold text-[#FFFFFF]">
