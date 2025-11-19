@@ -1,7 +1,7 @@
 import HeroSection from "@/components/sections/HeroSection";
 import OurBestO2 from "@/components/sections/OurBestO2";
 import TrendyPlants from "@/components/sections/TrendyPlants";
-
+import TopSellingBrands from "@/components/sections/TopSellingBrands";
 
 export default function Home() {
   return (
@@ -10,6 +10,7 @@ export default function Home() {
       <HeroSection />
       <TrendyPlants/>
       </section>
+      <TopSellingBrands/>
       <OurBestO2/>
     </main>
   );
