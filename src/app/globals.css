@@ -1,8 +1,19 @@
 @import "tailwindcss";
 
 .bg-custom-gradient {
-  background: linear-gradient(101.82deg, rgba(255, 255, 255, 0.44) 2.51%, rgba(0, 0, 0, 0) 39.22%, rgba(255, 255, 255, 0.33) 97.85%);
+  background: linear-gradient(
+    101.82deg,
+    rgba(255, 255, 255, 0.44) 2.51%,
+    rgba(0, 0, 0, 0) 39.22%,
+    rgba(255, 255, 255, 0.33) 97.85%
+  );
 }
 
-
-
+.border-gradient {
+  background: linear-gradient(
+    136.03deg,
+    #55b000 -1.83%,
+    rgba(255, 255, 255, 0.156606) 49.18%,
+    #50790b 100%
+  );
+}
